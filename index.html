@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" name="todo" id="todo-text" placeholder="Add a TODO">
+            <button onclick="updateStatus()"><i class="bi bi-plus-lg"></i></button>
+        </div>
+        <div class="list-container">
+            <ul class="task-box"></ul>
+        </div>
+        <div class="buttons-container">
+            <button class="but1" id="all">All</button>
+            <button class="but2" id="completed">Completed</button>
+            <button class="active" >Active</button>
+            <div class="delete-button">
+                <button id="clear-all">Delete all</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
